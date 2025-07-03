@@ -1,0 +1,62 @@
+<style>
+    .container{
+
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    .header{
+        background-color: blue;
+        padding: 5px;
+    }
+    .footer{
+        background-color: skyblue;
+        padding: 5px;
+    }
+    .middle{
+        background-color: aliceblue;
+        padding: 5px;
+    }
+    .one{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .maincontainer{
+        background-color: green;
+        height: 100px;
+         margin: 2px;
+         display: grid;
+         justify-content: center;
+         align-items: center;
+    }
+    .sidebar{
+        background-color: blueviolet;
+         margin: 2px;
+    }
+    .two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .twin{
+        background-color: orange;
+        height: 100px;
+        margin: 2px;
+    }
+
+</style>
+
+<div class="container">
+    <div class="header">header</div>
+     <div class="middle">
+     <div class="one">
+        <div class="maincontainer">maincontainer</div>
+        <div class="sidebar">sidebar</div>
+     </div>
+     
+      <div class="two"> 
+        <div class="twin">Twin</div>
+        <div class="twin">Twin</div>
+      </div>
+      </div>
+      <div class="footer">footer</div>
+
+</div>
