@@ -15,7 +15,7 @@
     <h1 class="text-2xl">Greenden</h1>
 
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
       class="w-6 h-6 md:hidden">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
@@ -35,7 +35,26 @@
     </ul>
   </nav>
 
-  <section class="bg-green-100 p-4 md:p-1010 flex justify-center">
+  <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"  style="width: 50%; height: 100vh; right: -50%;">
+    <div class="text-right p-5">
+      <p id="closenav" class="inline cursor-pointer">X</p>
+
+    </div>
+
+    <ul class="flex flex-col gap-10 items-center text-gray-600">
+      <li>
+        <a class=" hover:underline" href="index.html">Home</a>
+      </li>
+      <li>
+        <a class=" hover:underline" href="product.html">Products</a>
+      </li>
+      <li>
+        <a class=" hover:underline hover:text-black" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="bg-green-100 p-4 md:p-10 flex justify-center">
     <div>
       <p class="mb-4">We offer you a wide range of artificial and natural flowers</p>
       <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your interior</h2>
@@ -142,19 +161,44 @@
 
   </section>
 
-  <section class="text-center">
+  <section class="text-center gap-8">
     <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
     <p>Signup for our email newspaper to get exclusive discounts, update, and more</p>
-    <input type="text" class="border border-black pa-2 mt-3" style="width: 80%"/>
+    <input type="text" class="border border-black pa-2 mt-3" style="width: 50%" placeholder="enter your email"/>
     <br>
-    <button class="bg-black text-white p-3 m-1 underline">Subscribe</button>
+    <button class="bg-black text-white p-3 m-4 border rounded hover:underline">Subscribe</button>
 
   </section>
 
   <section class="bg-green-100 p-10 flex flex-col gap-5">
     <h1 class="text-4xl font-bold">Greenden</h1>
-    <p>🪴 Handpicked with care | Eco-friendly | Perfect for gifts & decor | Since 2021-</p>
-   <p>@ 2021 Greenden.com</p>
+    <p>🪴 Handpicked with care | Eco-friendly | Perfect for gifts & decor | Since 2021</p>
+   <p class="font-bold">@ 2021 Greenden.com</p>
+   <div class="flex gap-10 ">
+                    <div class="footer__1__s1">
+                       
+                        <p>Udemy Business</p>
+                        <p>Teach on Udemy</p>
+                        <p>Get the app</p>
+                        <p>About us</p>
+                        <p>Contact us</p>
+
+                    </div>
+                    <div class="footer__2__s2">
+                        <p>Careers</p>
+                        <p>Blog</p>
+                        <p>Help and support</p>
+                        <p>Affiliate</p>
+                        <p>Investors</p>
+                       
+
+                    </div>
+
+                </div>
   </section>
+
+  <script src="index.js">
+
+  </script>
 </body>
 </html>
